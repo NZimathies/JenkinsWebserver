@@ -1,7 +1,7 @@
 pipeline {
 	agent {
 		node {
-			nginx
+			label 'nginx'
 			}
 	}
 	triggers {
