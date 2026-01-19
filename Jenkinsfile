@@ -10,8 +10,10 @@ pipeline {
 	stages {
 		stage('Changes') {
 			steps {
-				echo "Transerring changes to webserver..."
-				cp index.html /data/www/
+				echo "Transferring changes to webserver..."
+				sh '''
+				cp -f index.html /data/www/
+				'''
 			}
 		}
 	}
