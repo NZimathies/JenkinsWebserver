@@ -12,7 +12,7 @@ pipeline {
 			steps {
 				echo "Transferring changes to webserver..."
 				sh '''
-				cp -f index.html /data/www/
+				echo "123456" | sudo -S cp -f index.html /data/www/
 				'''
 			}
 		}
